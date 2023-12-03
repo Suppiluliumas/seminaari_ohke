@@ -1,0 +1,97 @@
+{"level":30,"time":"2023-12-03T16:00:27.456Z","pid":24816,"hostname":"Suppiluliuma","msg":"Listening on 63111"}
+{"level":30,"time":"2023-12-03T16:00:27.960Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:27.960Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:27.962Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:27.962Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:27.967Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-12-03T16:00:28.486Z","pid":24816,"hostname":"Suppiluliuma","msg":"Adding browser to stack: chromium, version: 120.0.6099.28"}
+{"level":30,"time":"2023-12-03T16:00:28.486Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-12-03T16:00:28.486Z","pid":24816,"hostname":"Suppiluliuma","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2023-12-03T16:00:28.489Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method newContext"}
+{"level":30,"time":"2023-12-03T16:00:28.489Z","pid":24816,"hostname":"Suppiluliuma","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-12-03T16:00:28.489Z","pid":24816,"hostname":"Suppiluliuma","msg":"Trace file: "}
+{"level":30,"time":"2023-12-03T16:00:28.497Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changed active context"}
+{"level":30,"time":"2023-12-03T16:00:28.497Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method newContext"}
+{"level":30,"time":"2023-12-03T16:00:28.500Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-12-03T16:00:28.500Z","pid":24816,"hostname":"Suppiluliuma","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-12-03T16:00:29.135Z","pid":24816,"hostname":"Suppiluliuma","msg":"Video path: undefined"}
+{"level":30,"time":"2023-12-03T16:00:29.135Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changed active page"}
+{"level":30,"time":"2023-12-03T16:00:30.793Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method newPage"}
+{"level":30,"time":"2023-12-03T16:00:30.802Z","pid":24816,"hostname":"Suppiluliuma","msg":"<!DOCTYPE html><html class=\"no-js\" lang=\"en\"><!--<![endif]--><head>\n    <script src=\"/js/vendor/298279967.js\"></script>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width\">\n    <title>The Internet</title>\n    <link href=\"/css/app.css\" rel=\"stylesheet\">\n    <link href=\"/css/font-awesome.css\" rel=\"stylesheet\">\n    <script src=\"/js/vendor/jquery-1.11.3.min.js\"></script>\n    <script src=\"/js/vendor/jquery-ui-1.11.4/jquery-ui.js\"></script>\n    <script src=\"/js/foundation/foundation.js\"></script><meta class=\"foundation-mq-small\"><meta class=\"foundation-mq-medium\"><meta class=\"foundation-mq-large\"><style></style>\n    <script src=\"/js/foundation/foundation.alerts.js\"></script>\n    <script>\n      $(document).foundation();\n    </script>\n  </head>\n  <body>\n    <div class=\"row\">\n      <div id=\"flash-messages\" class=\"large-12 columns\">\n      \n        \n      \n        \n      \n        \n      \n      </div>\n    </div>\n    <div class=\"row\">\n      <a href=\"https://github.com/tourdedave/the-internet\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"/img/forkme_right_green_007200.png\" alt=\"Fork me on GitHub\"></a>\n      <div id=\"content\" class=\"large-12 columns\">\n        <div class=\"example\">\n  <h3>Basic Auth</h3>\n  <p>\n    Congratulations! You must have the proper credentials.\n  </p>\n</div>\n\n      </div>\n    </div>\n    <div id=\"page-footer\" class=\"row\">\n      <div class=\"large-4 large-centered columns\">\n        <hr>\n        <div style=\"text-align: center;\">Powered by <a target=\"_blank\" href=\"http://elementalselenium.com/\">Elemental Selenium</a></div>\n      </div>\n    </div>\n  \n\n</body></html>"}
+{"level":30,"time":"2023-12-03T16:00:35.810Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:35.812Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:35.814Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:35.815Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:35.817Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changed active context"}
+{"level":30,"time":"2023-12-03T16:00:35.817Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changing current active page: page=dbc4b69b-6177-4ebd-b217-7226ad2fd7b3"}
+{"level":30,"time":"2023-12-03T16:00:35.817Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changed active page"}
+{"level":30,"time":"2023-12-03T16:00:35.822Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:35.823Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:35.825Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-12-03T16:00:35.825Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-12-03T16:00:35.827Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-12-03T16:00:35.827Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-12-03T16:00:35.829Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changing current active page: page=dbc4b69b-6177-4ebd-b217-7226ad2fd7b3"}
+{"level":30,"time":"2023-12-03T16:00:35.829Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changed active page"}
+{"level":30,"time":"2023-12-03T16:00:35.831Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:35.833Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:35.835Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changed active context"}
+{"level":30,"time":"2023-12-03T16:00:35.835Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changing current active page: page=dbc4b69b-6177-4ebd-b217-7226ad2fd7b3"}
+{"level":30,"time":"2023-12-03T16:00:35.835Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changed active page"}
+{"level":30,"time":"2023-12-03T16:00:35.837Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-12-03T16:00:35.847Z","pid":24816,"hostname":"Suppiluliuma","msg":"Removed page=40eefac8-99ec-4eaf-99d0-e9fdf1bcce68 from context=24792433-06a4-4748-9899-a4fa777c59f5 page stack"}
+{"level":30,"time":"2023-12-03T16:00:35.868Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-12-03T16:00:35.872Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:35.872Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:00:35.877Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-12-03T16:00:35.877Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-12-03T16:00:35.879Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method newContext"}
+{"level":30,"time":"2023-12-03T16:00:35.879Z","pid":24816,"hostname":"Suppiluliuma","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-12-03T16:00:35.879Z","pid":24816,"hostname":"Suppiluliuma","msg":"Trace file: "}
+{"level":30,"time":"2023-12-03T16:00:35.886Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changed active context"}
+{"level":30,"time":"2023-12-03T16:00:35.886Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method newContext"}
+{"level":30,"time":"2023-12-03T16:00:35.888Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-12-03T16:00:35.888Z","pid":24816,"hostname":"Suppiluliuma","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-12-03T16:00:36.223Z","pid":24816,"hostname":"Suppiluliuma","msg":"Video path: undefined"}
+{"level":30,"time":"2023-12-03T16:00:36.223Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changed active page"}
+{"level":30,"time":"2023-12-03T16:00:36.765Z","pid":24816,"hostname":"Suppiluliuma","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_INVALID_AUTH_CREDENTIALS at https://the-internet.herokuapp.com/basic_auth
+Call log:
+  [2m- navigating to "https://the-internet.herokuapp.com/basic_auth", waiting until "load"[22m
+
+    at newPage (C:\Users\neval\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:10267:18)
+    at async PlaywrightServer.newPage (C:\Users\neval\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:10603:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2023-12-03T16:00:36.788Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\neval\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:8609:11)
+    at takeScreenshot (C:\Users\neval\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:8653:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\neval\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:10603:34)
+    at handleUnary (C:\Users\neval\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:852:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-12-03T16:00:36.788Z","pid":24816,"hostname":"Suppiluliuma","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2023-12-03T16:01:35.394Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:01:35.394Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:01:35.395Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:01:35.395Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:01:35.397Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changed active context"}
+{"level":30,"time":"2023-12-03T16:01:35.398Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:01:35.398Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:01:35.399Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-12-03T16:01:35.399Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-12-03T16:01:35.400Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2023-12-03T16:01:35.400Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2023-12-03T16:01:35.402Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:01:35.402Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:01:35.403Z","pid":24816,"hostname":"Suppiluliuma","msg":"Changed active context"}
+{"level":30,"time":"2023-12-03T16:01:35.403Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method closeContext"}
+{"level":30,"time":"2023-12-03T16:01:35.407Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method closeContext"}
+{"level":30,"time":"2023-12-03T16:01:35.411Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:01:35.411Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-12-03T16:04:11.732Z","pid":24816,"hostname":"Suppiluliuma","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-12-03T16:04:11.824Z","pid":24816,"hostname":"Suppiluliuma","msg":"End of node method closeAllBrowsers"}
