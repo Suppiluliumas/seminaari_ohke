@@ -1,113 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231203 20:28:19.423" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231203 20:58:37.365" rpa="false" schemaversion="4">
 <suite id="s1" name="Entry Ad" source="c:\Users\neval\Haaga-Helia\Ohjelmistojen_teknologioita\Seminaarityö\robot_tests\entry_ad.robot">
-<test id="s1-t1" name="Re-enable button function Test Case" line="27">
-<kw name="First page load should display ad, after reloading page, ad should not display Test Case">
+<test id="s1-t1" name="First page load should display ad, after reloading page, ad should not display Test Case" line="15">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 20:28:19.625" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/entry_ad'.</msg>
-<status status="PASS" starttime="20231203 20:28:19.624" endtime="20231203 20:28:22.477"/>
+<msg timestamp="20231203 20:58:37.551" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/entry_ad'.</msg>
+<status status="PASS" starttime="20231203 20:58:37.551" endtime="20231203 20:58:40.613"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>${Sleep}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 20:28:27.478" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 20:28:22.478" endtime="20231203 20:28:27.478"/>
+<msg timestamp="20231203 20:58:45.614" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231203 20:58:40.613" endtime="20231203 20:58:45.614"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${display_style}</var>
 <arg>//*[@id="modal"]</arg>
 <arg>style</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20231203 20:28:27.497" level="INFO">${display_style} = display: block;</msg>
-<status status="PASS" starttime="20231203 20:28:27.478" endtime="20231203 20:28:27.498"/>
+<msg timestamp="20231203 20:58:45.631" level="INFO">${display_style} = display: block;</msg>
+<status status="PASS" starttime="20231203 20:58:45.614" endtime="20231203 20:58:45.631"/>
 </kw>
-<kw name="Should Match" library="BuiltIn">
-<var>${display_style}</var>
+<kw name="Should Be Equal" library="BuiltIn">
 <arg>display: block;</arg>
-<arg>display: block;</arg>
-<doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
-<msg timestamp="20231203 20:28:27.498" level="INFO">${display_style} = None</msg>
-<status status="PASS" starttime="20231203 20:28:27.498" endtime="20231203 20:28:27.498"/>
+<arg>${display_style}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231203 20:58:45.631" endtime="20231203 20:58:45.631"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="modal"]/div[2]/div[3]/p</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 20:28:27.499" level="INFO">Clicking element '//*[@id="modal"]/div[2]/div[3]/p'.</msg>
-<status status="PASS" starttime="20231203 20:28:27.498" endtime="20231203 20:28:27.535"/>
+<msg timestamp="20231203 20:58:45.631" level="INFO">Clicking element '//*[@id="modal"]/div[2]/div[3]/p'.</msg>
+<status status="PASS" starttime="20231203 20:58:45.631" endtime="20231203 20:58:45.670"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>${Sleep}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 20:28:32.537" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 20:28:27.536" endtime="20231203 20:28:32.537"/>
+<msg timestamp="20231203 20:58:50.671" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231203 20:58:45.670" endtime="20231203 20:58:50.671"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${display_style}</var>
 <arg>//*[@id="modal"]</arg>
 <arg>style</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20231203 20:28:32.552" level="INFO">${display_style} = display: none;</msg>
-<status status="PASS" starttime="20231203 20:28:32.537" endtime="20231203 20:28:32.552"/>
+<msg timestamp="20231203 20:58:50.680" level="INFO">${display_style} = display: none;</msg>
+<status status="PASS" starttime="20231203 20:58:50.671" endtime="20231203 20:58:50.680"/>
 </kw>
-<kw name="Should Match" library="BuiltIn">
-<var>${display_style}</var>
+<kw name="Should Be Equal" library="BuiltIn">
 <arg>display: none;</arg>
-<arg>display: none;</arg>
-<doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
-<msg timestamp="20231203 20:28:32.552" level="INFO">${display_style} = None</msg>
-<status status="PASS" starttime="20231203 20:28:32.552" endtime="20231203 20:28:32.552"/>
+<arg>${display_style}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231203 20:58:50.680" endtime="20231203 20:58:50.680"/>
 </kw>
 <kw name="Reload Page" library="SeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="PASS" starttime="20231203 20:28:32.552" endtime="20231203 20:28:32.723"/>
-</kw>
-<kw name="Should Match" library="BuiltIn">
-<var>${display_style}</var>
-<arg>display: none;</arg>
-<arg>display: none;</arg>
-<doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
-<msg timestamp="20231203 20:28:32.724" level="INFO">${display_style} = None</msg>
-<status status="PASS" starttime="20231203 20:28:32.723" endtime="20231203 20:28:32.724"/>
-</kw>
-<status status="PASS" starttime="20231203 20:28:19.624" endtime="20231203 20:28:32.724"/>
+<status status="PASS" starttime="20231203 20:58:50.680" endtime="20231203 20:58:50.850"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${display_style}</var>
 <arg>//*[@id="modal"]</arg>
 <arg>style</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20231203 20:28:32.739" level="INFO">${display_style} = display: none;</msg>
-<status status="PASS" starttime="20231203 20:28:32.724" endtime="20231203 20:28:32.739"/>
+<msg timestamp="20231203 20:58:50.851" level="INFO">${display_style} = display: none;</msg>
+<status status="PASS" starttime="20231203 20:58:50.851" endtime="20231203 20:58:50.851"/>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <arg>display: none;</arg>
 <arg>${display_style}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" starttime="20231203 20:28:32.739" endtime="20231203 20:28:32.739"/>
+<status status="PASS" starttime="20231203 20:58:50.851" endtime="20231203 20:58:50.851"/>
 </kw>
-<while condition="'display: none;'=='//*[@id=&quot;modal&quot;]'">
-<iter>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="restart-ad"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20231203 20:28:32.740" endtime="20231203 20:28:32.740"/>
-</kw>
-<kw name="Should Be Equal" library="BuiltIn">
-<arg>display: block;</arg>
-<arg>${display_style}</arg>
-<doc>Fails if the given objects are unequal.</doc>
-<status status="NOT RUN" starttime="20231203 20:28:32.740" endtime="20231203 20:28:32.740"/>
-</kw>
-<status status="NOT RUN" starttime="20231203 20:28:32.740" endtime="20231203 20:28:32.741"/>
-</iter>
-<status status="NOT RUN" starttime="20231203 20:28:32.740" endtime="20231203 20:28:32.741"/>
-</while>
-<status status="PASS" starttime="20231203 20:28:19.623" endtime="20231203 20:28:32.741"/>
+<status status="PASS" starttime="20231203 20:58:37.551" endtime="20231203 20:58:50.863"/>
 </test>
-<status status="PASS" starttime="20231203 20:28:19.426" endtime="20231203 20:28:32.742"/>
+<status status="PASS" starttime="20231203 20:58:37.365" endtime="20231203 20:58:50.864"/>
 </suite>
 <statistics>
 <total>

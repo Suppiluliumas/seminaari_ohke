@@ -27,7 +27,7 @@ Logout button function works correctly, goes login page Test Case
     Login correct auth Test Case
     Sleep    ${Sleep}
     Click Element    //*[@id="content"]/div/a
-    Page Should Contain Element    //*[@id="flash"]
+    Element Should Contain    //*[@id="flash"]    You logged out of the secure area!
     Close Browser
 
 Login with incorrect username, should have "Your username is invalid" message Test Case

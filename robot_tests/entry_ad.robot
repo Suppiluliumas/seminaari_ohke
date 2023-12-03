@@ -22,6 +22,7 @@ First page load should display ad, after reloading page, ad should not display T
     ${display_style}    Get Element Attribute    //*[@id="modal"]    style
     Should Be Equal    display: none;    ${display_style}
     Reload Page
+    ${display_style}    Get Element Attribute    //*[@id="modal"]    style
     Should Be Equal    display: none;    ${display_style}
 
 Re-enable button function Test Case
@@ -32,9 +33,6 @@ Re-enable button function Test Case
         Click Element    //*[@id="restart-ad"]
         Should Be Equal    display: block;    ${display_style}
     END
-
-
-    
 
 
 *** Keywords ***
