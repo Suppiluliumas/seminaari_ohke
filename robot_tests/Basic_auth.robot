@@ -2,12 +2,11 @@
 Library     OperatingSystem
 Library     String
 Library     RequestsLibrary
-Library     Browser
 Library     SeleniumLibrary
 
 
 *** Variables ***
-${Browser}          chromium
+${Browser}          chrome
 ${Sleep}            5
 ${username}=        admin
 ${pwd}=             admin
@@ -18,8 +17,7 @@ ${URL2}             https://${username}:${pwd}@the-internet.herokuapp.com/basic_
 
 *** Test Cases ***
 Correct auth Test Case
-    Browser.Open Browser    ${URL2}    browser=${Browser}
-    ${page_source}    Get Page Source
+    Open Browser    ${URL2}    browser=${Browser}
     Sleep    ${Sleep}
-    Should Contain    ${page_source}    Congratulations! You must have the proper credentials.
-    Browser.Close Browser
+    Page Should Contain  Congratulations! You must have the proper credentials.
+    Close Browser

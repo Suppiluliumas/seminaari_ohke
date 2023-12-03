@@ -1,1001 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231203 18:11:07.873" rpa="false" schemaversion="4">
-<suite id="s1" name="Robot Tests" source="c:\Users\neval\Haaga-Helia\Ohjelmistojen_teknologioita\Seminaarityö\robot_tests">
-<suite id="s1-s1" name="Add remove elements" source="c:\Users\neval\Haaga-Helia\Ohjelmistojen_teknologioita\Seminaarityö\robot_tests\Add_remove_elements.robot">
-<test id="s1-s1-t1" name="Adding 1 element Test Case" line="17">
-<kw name="Open add_remove_elements page" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL1}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:11:08.041" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/add_remove_elements/'.</msg>
-<status status="PASS" starttime="20231203 18:11:08.040" endtime="20231203 18:11:10.879"/>
-</kw>
-<status status="PASS" starttime="20231203 18:11:08.040" endtime="20231203 18:11:10.879"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:11:15.881" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:11:10.880" endtime="20231203 18:11:15.881"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>//*[@id="content"]/div/button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231203 18:11:15.882" level="INFO">Clicking button '//*[@id="content"]/div/button'.</msg>
-<status status="PASS" starttime="20231203 18:11:15.881" endtime="20231203 18:11:15.931"/>
-</kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Delete</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231203 18:11:15.945" level="INFO">Current page contains text 'Delete'.</msg>
-<status status="PASS" starttime="20231203 18:11:15.931" endtime="20231203 18:11:15.945"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:11:15.946" endtime="20231203 18:11:18.020"/>
-</kw>
-<status status="PASS" starttime="20231203 18:11:08.039" endtime="20231203 18:11:18.020"/>
-</test>
-<test id="s1-s1-t2" name="Deleting 1 element Test Case" line="22">
-<kw name="Open add_remove_elements page" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL1}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:11:18.023" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/add_remove_elements/'.</msg>
-<status status="PASS" starttime="20231203 18:11:18.023" endtime="20231203 18:11:20.875"/>
-</kw>
-<status status="PASS" starttime="20231203 18:11:18.022" endtime="20231203 18:11:20.876"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:11:25.877" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:11:20.876" endtime="20231203 18:11:25.877"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>//*[@id="content"]/div/button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231203 18:11:25.878" level="INFO">Clicking button '//*[@id="content"]/div/button'.</msg>
-<status status="PASS" starttime="20231203 18:11:25.877" endtime="20231203 18:11:25.928"/>
-</kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Delete</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231203 18:11:25.938" level="INFO">Current page contains text 'Delete'.</msg>
-<status status="PASS" starttime="20231203 18:11:25.928" endtime="20231203 18:11:25.938"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:11:30.939" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:11:25.939" endtime="20231203 18:11:30.939"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>//*[@id="elements"]/button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231203 18:11:30.941" level="INFO">Clicking button '//*[@id="elements"]/button'.</msg>
-<status status="PASS" starttime="20231203 18:11:30.940" endtime="20231203 18:11:30.997"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:11:35.999" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:11:30.998" endtime="20231203 18:11:35.999"/>
-</kw>
-<kw name="Page Should Not Contain" library="SeleniumLibrary">
-<arg>//*[@id="elements"]/button</arg>
-<doc>Verifies the current page does not contain ``text``.</doc>
-<msg timestamp="20231203 18:11:36.023" level="INFO">Current page does not contain text '//*[@id="elements"]/button'.</msg>
-<status status="PASS" starttime="20231203 18:11:35.999" endtime="20231203 18:11:36.023"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:11:36.024" endtime="20231203 18:11:38.119"/>
-</kw>
-<status status="PASS" starttime="20231203 18:11:18.022" endtime="20231203 18:11:38.119"/>
-</test>
-<status status="PASS" starttime="20231203 18:11:07.892" endtime="20231203 18:11:38.120"/>
-</suite>
-<suite id="s1-s2" name="Basic auth" source="c:\Users\neval\Haaga-Helia\Ohjelmistojen_teknologioita\Seminaarityö\robot_tests\Basic_auth.robot">
-<test id="s1-s2-t1" name="Correct auth Test Case" line="20">
-<kw name="Open Browser" library="Browser">
-<arg>${URL2}</arg>
-<arg>browser=${Browser}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
-<msg timestamp="20231203 18:11:38.814" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg timestamp="20231203 18:11:38.815" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\neval\\Haaga-Helia\\Ohjelmistojen_teknologioita\\Seminaarity\u00f6\\browser\\traces\\ab5d63c5-7877-4d7f-aff8-49b010440a1f"}</msg>
-<msg timestamp="20231203 18:11:39.401" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\neval\\Haaga-Helia\\Ohjelmistojen_teknologioita\\Seminaarityö\\browser\\traces\\ab5d63c5-7877-4d7f-aff8-49b010440a1f"}</msg>
-<msg timestamp="20231203 18:11:39.402" level="INFO">{
-  "acceptDownloads": true,
-  "bypassCSP": true,
-  "forcedColors": "none",
-  "ignoreHTTPSErrors": false,
-  "javaScriptEnabled": true,
-  "offline": false,
-  "reducedMotion": "no-preference",
-  "serviceWorkers": "allow",
-  "viewport": {
-    "height": 720,
-    "width": 1280
-  }
-}</msg>
-<msg timestamp="20231203 18:11:39.419" level="INFO">Successfully created context. </msg>
-<msg timestamp="20231203 18:11:39.419" level="INFO">{'acceptDownloads': True, 'bypassCSP': True, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
-<msg timestamp="20231203 18:11:41.717" level="INFO">Successfully initialized new page object and opened url: https://admin:admin@the-internet.herokuapp.com/basic_auth</msg>
-<status status="PASS" starttime="20231203 18:11:38.813" endtime="20231203 18:11:41.717"/>
-</kw>
-<kw name="Get Page Source" library="Browser">
-<var>${page_source}</var>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Gets pages HTML source as a string.</doc>
-<msg timestamp="20231203 18:11:41.726" level="INFO">${page_source} = &lt;!DOCTYPE html&gt;&lt;html class="no-js" lang="en"&gt;&lt;!--&lt;![endif]--&gt;&lt;head&gt;
-    &lt;script src="/js/vendor/298279967.js"&gt;&lt;/script&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;meta name="viewport" content="width=device-width...</msg>
-<status status="PASS" starttime="20231203 18:11:41.718" endtime="20231203 18:11:41.726"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:11:46.728" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:11:41.727" endtime="20231203 18:11:46.728"/>
-</kw>
-<kw name="Should Contain" library="BuiltIn">
-<arg>${page_source}</arg>
-<arg>Congratulations! You must have the proper credentials.</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" starttime="20231203 18:11:46.728" endtime="20231203 18:11:46.728"/>
-</kw>
-<kw name="Close Browser" library="Browser">
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Closes the current browser.</doc>
-<msg timestamp="20231203 18:11:46.856" level="INFO">Closed browser</msg>
-<status status="PASS" starttime="20231203 18:11:46.729" endtime="20231203 18:11:46.857"/>
-</kw>
-<status status="PASS" starttime="20231203 18:11:38.811" endtime="20231203 18:11:46.857"/>
-</test>
-<status status="PASS" starttime="20231203 18:11:38.121" endtime="20231203 18:11:46.881"/>
-</suite>
-<suite id="s1-s3" name="Check boxes" source="c:\Users\neval\Haaga-Helia\Ohjelmistojen_teknologioita\Seminaarityö\robot_tests\Check_boxes.robot">
-<test id="s1-s3-t1" name="Click checkbox 1 and checkbox 1,1 should be checked, 2 should be unchecked Test Case" line="17">
-<kw name="Open checkboxes page" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:11:46.909" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/checkboxes'.</msg>
-<status status="PASS" starttime="20231203 18:11:46.908" endtime="20231203 18:11:49.625"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:11:54.625" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:11:49.625" endtime="20231203 18:11:54.625"/>
-</kw>
-<status status="PASS" starttime="20231203 18:11:46.908" endtime="20231203 18:11:54.625"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="checkboxes"]/input[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 18:11:54.626" level="INFO">Clicking element '//*[@id="checkboxes"]/input[1]'.</msg>
-<status status="PASS" starttime="20231203 18:11:54.625" endtime="20231203 18:11:54.669"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="checkboxes"]/input[2]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 18:11:54.670" level="INFO">Clicking element '//*[@id="checkboxes"]/input[2]'.</msg>
-<status status="PASS" starttime="20231203 18:11:54.670" endtime="20231203 18:11:54.704"/>
-</kw>
-<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
-<arg>//*[@id="checkboxes"]/input[1]</arg>
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<msg timestamp="20231203 18:11:54.705" level="INFO">Verifying checkbox '//*[@id="checkboxes"]/input[1]' is selected.</msg>
-<status status="PASS" starttime="20231203 18:11:54.704" endtime="20231203 18:11:54.732"/>
-</kw>
-<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
-<arg>//*[@id="checkboxes"]/input[2]</arg>
-<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<msg timestamp="20231203 18:11:54.733" level="INFO">Verifying checkbox '//*[@id="checkboxes"]/input[2]' is not selected.</msg>
-<status status="PASS" starttime="20231203 18:11:54.732" endtime="20231203 18:11:54.755"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:11:54.756" endtime="20231203 18:11:56.822"/>
-</kw>
-<status status="PASS" starttime="20231203 18:11:46.907" endtime="20231203 18:11:56.822"/>
-</test>
-<status status="PASS" starttime="20231203 18:11:46.903" endtime="20231203 18:11:56.824"/>
-</suite>
-<suite id="s1-s4" name="Context menu" source="c:\Users\neval\Haaga-Helia\Ohjelmistojen_teknologioita\Seminaarityö\robot_tests\Context_menu.robot">
-<test id="s1-s4-t1" name="Right click hotbox and popup should open Test Case" line="17">
-<kw name="Open context_menu page" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:11:56.830" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/context_menu'.</msg>
-<status status="PASS" starttime="20231203 18:11:56.830" endtime="20231203 18:11:59.582"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231203 18:11:59.582" endtime="20231203 18:11:59.706"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:12:04.707" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:11:59.706" endtime="20231203 18:12:04.707"/>
-</kw>
-<status status="PASS" starttime="20231203 18:11:56.829" endtime="20231203 18:12:04.707"/>
-</kw>
-<kw name="Open Context Menu" library="SeleniumLibrary">
-<arg>//*[@id="hot-spot"]</arg>
-<doc>Opens the context menu on the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20231203 18:12:04.708" endtime="20231203 18:12:04.984"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:12:09.985" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:12:04.984" endtime="20231203 18:12:09.985"/>
-</kw>
-<kw name="Alert Should Be Present" library="SeleniumLibrary">
-<arg>text=You selected a context menu</arg>
-<doc>Verifies that an alert is present and by default, accepts it.</doc>
-<msg timestamp="20231203 18:12:09.986" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20231203 18:12:09.985" endtime="20231203 18:12:09.989"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:12:11.991" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20231203 18:12:09.990" endtime="20231203 18:12:11.991"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:12:11.991" endtime="20231203 18:12:14.063"/>
-</kw>
-<status status="PASS" starttime="20231203 18:11:56.829" endtime="20231203 18:12:14.064"/>
-</test>
-<test id="s1-s4-t2" name="Left click hotbox and popup should not open Test Case" line="24">
-<kw name="Open context_menu page" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:12:14.066" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/context_menu'.</msg>
-<status status="PASS" starttime="20231203 18:12:14.065" endtime="20231203 18:12:17.042"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231203 18:12:17.043" endtime="20231203 18:12:17.164"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:12:22.165" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:12:17.164" endtime="20231203 18:12:22.165"/>
-</kw>
-<status status="PASS" starttime="20231203 18:12:14.065" endtime="20231203 18:12:22.166"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="hot-spot"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 18:12:22.166" level="INFO">Clicking element '//*[@id="hot-spot"]'.</msg>
-<status status="PASS" starttime="20231203 18:12:22.166" endtime="20231203 18:12:22.203"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:12:27.204" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:12:22.203" endtime="20231203 18:12:27.204"/>
-</kw>
-<kw name="Alert Should Not Be Present" library="SeleniumLibrary">
-<doc>Verifies that no alert is present.</doc>
-<status status="PASS" starttime="20231203 18:12:27.204" endtime="20231203 18:12:32.222"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:12:32.222" endtime="20231203 18:12:34.283"/>
-</kw>
-<status status="PASS" starttime="20231203 18:12:14.065" endtime="20231203 18:12:34.283"/>
-</test>
-<status status="PASS" starttime="20231203 18:11:56.825" endtime="20231203 18:12:34.285"/>
-</suite>
-<suite id="s1-s5" name="Drag Drop" source="c:\Users\neval\Haaga-Helia\Ohjelmistojen_teknologioita\Seminaarityö\robot_tests\drag_drop.robot">
-<test id="s1-s5-t1" name="Drag A to B, they should switch places Test Case" line="17">
-<kw name="Open drag_and_drop page" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:12:34.291" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/drag_and_drop'.</msg>
-<status status="PASS" starttime="20231203 18:12:34.290" endtime="20231203 18:12:37.127"/>
-</kw>
-<status status="PASS" starttime="20231203 18:12:34.290" endtime="20231203 18:12:37.127"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//*[@id="column-a"]/header</arg>
-<arg>A</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231203 18:12:37.128" level="INFO">Verifying element '//*[@id="column-a"]/header' contains exact text 'A'.</msg>
-<status status="PASS" starttime="20231203 18:12:37.128" endtime="20231203 18:12:37.148"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//*[@id="column-b"]/header</arg>
-<arg>B</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231203 18:12:37.149" level="INFO">Verifying element '//*[@id="column-b"]/header' contains exact text 'B'.</msg>
-<status status="PASS" starttime="20231203 18:12:37.149" endtime="20231203 18:12:37.166"/>
-</kw>
-<kw name="Drag And Drop" library="SeleniumLibrary">
-<arg>//*[@id="column-a"]</arg>
-<arg>//*[@id="column-b"]</arg>
-<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" starttime="20231203 18:12:37.167" endtime="20231203 18:12:37.720"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//*[@id="column-a"]/header</arg>
-<arg>B</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231203 18:12:37.721" level="INFO">Verifying element '//*[@id="column-a"]/header' contains exact text 'B'.</msg>
-<status status="PASS" starttime="20231203 18:12:37.721" endtime="20231203 18:12:37.733"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//*[@id="column-b"]/header</arg>
-<arg>A</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231203 18:12:37.734" level="INFO">Verifying element '//*[@id="column-b"]/header' contains exact text 'A'.</msg>
-<status status="PASS" starttime="20231203 18:12:37.733" endtime="20231203 18:12:37.744"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:12:37.744" endtime="20231203 18:12:39.818"/>
-</kw>
-<status status="PASS" starttime="20231203 18:12:34.289" endtime="20231203 18:12:39.818"/>
-</test>
-<test id="s1-s5-t2" name="Drag B to A, they should switch places Test Case" line="24">
-<kw name="Open drag_and_drop page" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:12:39.821" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/drag_and_drop'.</msg>
-<status status="PASS" starttime="20231203 18:12:39.820" endtime="20231203 18:12:42.632"/>
-</kw>
-<status status="PASS" starttime="20231203 18:12:39.820" endtime="20231203 18:12:42.632"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//*[@id="column-a"]/header</arg>
-<arg>A</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231203 18:12:42.633" level="INFO">Verifying element '//*[@id="column-a"]/header' contains exact text 'A'.</msg>
-<status status="PASS" starttime="20231203 18:12:42.632" endtime="20231203 18:12:42.655"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//*[@id="column-b"]/header</arg>
-<arg>B</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231203 18:12:42.656" level="INFO">Verifying element '//*[@id="column-b"]/header' contains exact text 'B'.</msg>
-<status status="PASS" starttime="20231203 18:12:42.656" endtime="20231203 18:12:42.672"/>
-</kw>
-<kw name="Drag And Drop" library="SeleniumLibrary">
-<arg>//*[@id="column-b"]</arg>
-<arg>//*[@id="column-a"]</arg>
-<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" starttime="20231203 18:12:42.672" endtime="20231203 18:12:43.255"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//*[@id="column-a"]/header</arg>
-<arg>B</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231203 18:12:43.256" level="INFO">Verifying element '//*[@id="column-a"]/header' contains exact text 'B'.</msg>
-<status status="PASS" starttime="20231203 18:12:43.256" endtime="20231203 18:12:43.267"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//*[@id="column-b"]/header</arg>
-<arg>A</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231203 18:12:43.268" level="INFO">Verifying element '//*[@id="column-b"]/header' contains exact text 'A'.</msg>
-<status status="PASS" starttime="20231203 18:12:43.267" endtime="20231203 18:12:43.279"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:12:43.279" endtime="20231203 18:12:45.351"/>
-</kw>
-<status status="PASS" starttime="20231203 18:12:39.820" endtime="20231203 18:12:45.351"/>
-</test>
-<test id="s1-s5-t3" name="Drag A to page footer, A and B should be the same Test Case" line="31">
-<kw name="Open drag_and_drop page" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:12:45.353" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/drag_and_drop'.</msg>
-<status status="PASS" starttime="20231203 18:12:45.353" endtime="20231203 18:12:48.183"/>
-</kw>
-<status status="PASS" starttime="20231203 18:12:45.353" endtime="20231203 18:12:48.183"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//*[@id="column-a"]/header</arg>
-<arg>A</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231203 18:12:48.184" level="INFO">Verifying element '//*[@id="column-a"]/header' contains exact text 'A'.</msg>
-<status status="PASS" starttime="20231203 18:12:48.183" endtime="20231203 18:12:48.209"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//*[@id="column-b"]/header</arg>
-<arg>B</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231203 18:12:48.211" level="INFO">Verifying element '//*[@id="column-b"]/header' contains exact text 'B'.</msg>
-<status status="PASS" starttime="20231203 18:12:48.210" endtime="20231203 18:12:48.225"/>
-</kw>
-<kw name="Drag And Drop" library="SeleniumLibrary">
-<arg>//*[@id="column-a"]</arg>
-<arg>//*[@id="page-footer"]</arg>
-<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
-<status status="PASS" starttime="20231203 18:12:48.225" endtime="20231203 18:12:48.793"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//*[@id="column-a"]/header</arg>
-<arg>A</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231203 18:12:48.794" level="INFO">Verifying element '//*[@id="column-a"]/header' contains exact text 'A'.</msg>
-<status status="PASS" starttime="20231203 18:12:48.794" endtime="20231203 18:12:48.805"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//*[@id="column-b"]/header</arg>
-<arg>B</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20231203 18:12:48.806" level="INFO">Verifying element '//*[@id="column-b"]/header' contains exact text 'B'.</msg>
-<status status="PASS" starttime="20231203 18:12:48.805" endtime="20231203 18:12:48.818"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:12:48.818" endtime="20231203 18:12:50.897"/>
-</kw>
-<status status="PASS" starttime="20231203 18:12:45.352" endtime="20231203 18:12:50.897"/>
-</test>
-<status status="PASS" starttime="20231203 18:12:34.286" endtime="20231203 18:12:50.898"/>
-</suite>
-<suite id="s1-s6" name="Dropdown" source="c:\Users\neval\Haaga-Helia\Ohjelmistojen_teknologioita\Seminaarityö\robot_tests\dropdown.robot">
-<test id="s1-s6-t1" name="Choose item 1 and item1 element should have attribute selected, item 2 element shouldnt have attribute Test Case" line="18">
-<kw name="Open dropdown page" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:12:50.913" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/dropdown'.</msg>
-<status status="PASS" starttime="20231203 18:12:50.911" endtime="20231203 18:12:53.730"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:12:58.731" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:12:53.730" endtime="20231203 18:12:58.731"/>
-</kw>
-<status status="PASS" starttime="20231203 18:12:50.911" endtime="20231203 18:12:58.731"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="dropdown"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 18:12:58.732" level="INFO">Clicking element '//*[@id="dropdown"]'.</msg>
-<status status="PASS" starttime="20231203 18:12:58.731" endtime="20231203 18:12:58.787"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:13:03.788" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:12:58.788" endtime="20231203 18:13:03.788"/>
-</kw>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>//*[@id="dropdown"]</arg>
-<arg>1</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20231203 18:13:03.789" level="INFO">Selecting options from selection list '//*[@id="dropdown"]' by value 1.</msg>
-<status status="PASS" starttime="20231203 18:13:03.788" endtime="20231203 18:13:03.847"/>
-</kw>
-<kw name="Element Attribute Value Should Be" library="SeleniumLibrary">
-<arg>//*[@id="dropdown"]/option[2]</arg>
-<arg>selected</arg>
-<arg>true</arg>
-<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
-<msg timestamp="20231203 18:13:03.867" level="INFO">Element '//*[@id="dropdown"]/option[2]' attribute 'selected' contains value 'true'.</msg>
-<status status="PASS" starttime="20231203 18:13:03.847" endtime="20231203 18:13:03.867"/>
-</kw>
-<kw name="Get Element Attribute" library="SeleniumLibrary">
-<var>${attribute_value}</var>
-<arg>//*[@id="dropdown"]/option[3]</arg>
-<arg>selected</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20231203 18:13:03.868" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
-<msg timestamp="20231203 18:13:03.887" level="INFO">${attribute_value} = None</msg>
-<status status="PASS" starttime="20231203 18:13:03.868" endtime="20231203 18:13:03.887"/>
-</kw>
-<if>
-<branch type="IF" condition="&quot;${attribute_value}&quot; != &quot;None&quot;">
-<kw name="Fail" library="BuiltIn">
-<arg>Element attribute should not be present</arg>
-<doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="NOT RUN" starttime="20231203 18:13:03.887" endtime="20231203 18:13:03.887"/>
-</kw>
-<status status="NOT RUN" starttime="20231203 18:13:03.887" endtime="20231203 18:13:03.887"/>
-</branch>
-<status status="PASS" starttime="20231203 18:13:03.887" endtime="20231203 18:13:03.888"/>
-</if>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:13:03.888" endtime="20231203 18:13:05.959"/>
-</kw>
-<status status="PASS" starttime="20231203 18:12:50.910" endtime="20231203 18:13:05.959"/>
-</test>
-<status status="PASS" starttime="20231203 18:12:50.900" endtime="20231203 18:13:05.961"/>
-</suite>
-<suite id="s1-s7" name="Entry Ad" source="c:\Users\neval\Haaga-Helia\Ohjelmistojen_teknologioita\Seminaarityö\robot_tests\entry_ad.robot">
-<test id="s1-s7-t1" name="First page load should display ad, after reloading page, ad should not display Test Case" line="15">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:13:05.967" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/entry_ad'.</msg>
-<status status="PASS" starttime="20231203 18:13:05.965" endtime="20231203 18:13:08.786"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:13:13.787" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:13:08.787" endtime="20231203 18:13:13.787"/>
-</kw>
-<kw name="Get Element Attribute" library="SeleniumLibrary">
-<var>${display_style}</var>
-<arg>//*[@id="modal"]</arg>
-<arg>style</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20231203 18:13:13.806" level="INFO">${display_style} = display: block;</msg>
-<status status="PASS" starttime="20231203 18:13:13.787" endtime="20231203 18:13:13.806"/>
-</kw>
-<kw name="Should Match" library="BuiltIn">
-<arg>display: block;</arg>
-<arg>${display_style}</arg>
-<doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
-<status status="PASS" starttime="20231203 18:13:13.806" endtime="20231203 18:13:13.807"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="modal"]/div[2]/div[3]/p</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 18:13:13.808" level="INFO">Clicking element '//*[@id="modal"]/div[2]/div[3]/p'.</msg>
-<status status="PASS" starttime="20231203 18:13:13.807" endtime="20231203 18:13:13.845"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:13:18.845" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:13:13.845" endtime="20231203 18:13:18.845"/>
-</kw>
-<kw name="Get Element Attribute" library="SeleniumLibrary">
-<var>${display_style}</var>
-<arg>//*[@id="modal"]</arg>
-<arg>style</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20231203 18:13:18.862" level="INFO">${display_style} = display: none;</msg>
-<status status="PASS" starttime="20231203 18:13:18.846" endtime="20231203 18:13:18.862"/>
-</kw>
-<kw name="Should Match" library="BuiltIn">
-<arg>display: none;</arg>
-<arg>${display_style}</arg>
-<doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
-<status status="PASS" starttime="20231203 18:13:18.862" endtime="20231203 18:13:18.863"/>
-</kw>
-<kw name="Reload Page" library="SeleniumLibrary">
-<doc>Simulates user reloading page.</doc>
-<status status="PASS" starttime="20231203 18:13:18.863" endtime="20231203 18:13:19.035"/>
-</kw>
-<kw name="Get Element Attribute" library="SeleniumLibrary">
-<var>${display_style}</var>
-<arg>//*[@id="modal"]</arg>
-<arg>style</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20231203 18:13:19.054" level="INFO">${display_style} = display: none;</msg>
-<status status="PASS" starttime="20231203 18:13:19.035" endtime="20231203 18:13:19.054"/>
-</kw>
-<kw name="Should Match" library="BuiltIn">
-<arg>display: none;</arg>
-<arg>${display_style}</arg>
-<doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
-<status status="PASS" starttime="20231203 18:13:19.054" endtime="20231203 18:13:19.055"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:13:19.055" endtime="20231203 18:13:21.135"/>
-</kw>
-<status status="PASS" starttime="20231203 18:13:05.965" endtime="20231203 18:13:21.135"/>
-</test>
-<test id="s1-s7-t2" name="Re-enable button function Test Case" line="28">
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231203 20:28:19.423" rpa="false" schemaversion="4">
+<suite id="s1" name="Entry Ad" source="c:\Users\neval\Haaga-Helia\Ohjelmistojen_teknologioita\Seminaarityö\robot_tests\entry_ad.robot">
+<test id="s1-t1" name="Re-enable button function Test Case" line="27">
 <kw name="First page load should display ad, after reloading page, ad should not display Test Case">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:13:21.137" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/entry_ad'.</msg>
-<status status="PASS" starttime="20231203 18:13:21.137" endtime="20231203 18:13:23.974"/>
+<msg timestamp="20231203 20:28:19.625" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/entry_ad'.</msg>
+<status status="PASS" starttime="20231203 20:28:19.624" endtime="20231203 20:28:22.477"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>${Sleep}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:13:28.974" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:13:23.974" endtime="20231203 18:13:28.974"/>
+<msg timestamp="20231203 20:28:27.478" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231203 20:28:22.478" endtime="20231203 20:28:27.478"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${display_style}</var>
 <arg>//*[@id="modal"]</arg>
 <arg>style</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20231203 18:13:28.994" level="INFO">${display_style} = display: block;</msg>
-<status status="PASS" starttime="20231203 18:13:28.974" endtime="20231203 18:13:28.995"/>
+<msg timestamp="20231203 20:28:27.497" level="INFO">${display_style} = display: block;</msg>
+<status status="PASS" starttime="20231203 20:28:27.478" endtime="20231203 20:28:27.498"/>
 </kw>
 <kw name="Should Match" library="BuiltIn">
 <var>${display_style}</var>
 <arg>display: block;</arg>
 <arg>display: block;</arg>
 <doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
-<msg timestamp="20231203 18:13:28.995" level="INFO">${display_style} = None</msg>
-<status status="PASS" starttime="20231203 18:13:28.995" endtime="20231203 18:13:28.995"/>
+<msg timestamp="20231203 20:28:27.498" level="INFO">${display_style} = None</msg>
+<status status="PASS" starttime="20231203 20:28:27.498" endtime="20231203 20:28:27.498"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="modal"]/div[2]/div[3]/p</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 18:13:28.996" level="INFO">Clicking element '//*[@id="modal"]/div[2]/div[3]/p'.</msg>
-<status status="PASS" starttime="20231203 18:13:28.996" endtime="20231203 18:13:29.037"/>
+<msg timestamp="20231203 20:28:27.499" level="INFO">Clicking element '//*[@id="modal"]/div[2]/div[3]/p'.</msg>
+<status status="PASS" starttime="20231203 20:28:27.498" endtime="20231203 20:28:27.535"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>${Sleep}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:13:34.037" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:13:29.037" endtime="20231203 18:13:34.037"/>
+<msg timestamp="20231203 20:28:32.537" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231203 20:28:27.536" endtime="20231203 20:28:32.537"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${display_style}</var>
 <arg>//*[@id="modal"]</arg>
 <arg>style</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20231203 18:13:34.052" level="INFO">${display_style} = display: none;</msg>
-<status status="PASS" starttime="20231203 18:13:34.037" endtime="20231203 18:13:34.052"/>
+<msg timestamp="20231203 20:28:32.552" level="INFO">${display_style} = display: none;</msg>
+<status status="PASS" starttime="20231203 20:28:32.537" endtime="20231203 20:28:32.552"/>
 </kw>
 <kw name="Should Match" library="BuiltIn">
 <var>${display_style}</var>
 <arg>display: none;</arg>
 <arg>display: none;</arg>
 <doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
-<msg timestamp="20231203 18:13:34.052" level="INFO">${display_style} = None</msg>
-<status status="PASS" starttime="20231203 18:13:34.052" endtime="20231203 18:13:34.053"/>
+<msg timestamp="20231203 20:28:32.552" level="INFO">${display_style} = None</msg>
+<status status="PASS" starttime="20231203 20:28:32.552" endtime="20231203 20:28:32.552"/>
 </kw>
 <kw name="Reload Page" library="SeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="PASS" starttime="20231203 18:13:34.053" endtime="20231203 18:13:34.223"/>
+<status status="PASS" starttime="20231203 20:28:32.552" endtime="20231203 20:28:32.723"/>
 </kw>
 <kw name="Should Match" library="BuiltIn">
 <var>${display_style}</var>
 <arg>display: none;</arg>
 <arg>display: none;</arg>
 <doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
-<msg timestamp="20231203 18:13:34.223" level="INFO">${display_style} = None</msg>
-<status status="PASS" starttime="20231203 18:13:34.223" endtime="20231203 18:13:34.223"/>
+<msg timestamp="20231203 20:28:32.724" level="INFO">${display_style} = None</msg>
+<status status="PASS" starttime="20231203 20:28:32.723" endtime="20231203 20:28:32.724"/>
 </kw>
-<status status="PASS" starttime="20231203 18:13:21.137" endtime="20231203 18:13:34.223"/>
+<status status="PASS" starttime="20231203 20:28:19.624" endtime="20231203 20:28:32.724"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${display_style}</var>
 <arg>//*[@id="modal"]</arg>
 <arg>style</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20231203 18:13:34.238" level="INFO">${display_style} = display: none;</msg>
-<status status="PASS" starttime="20231203 18:13:34.224" endtime="20231203 18:13:34.238"/>
+<msg timestamp="20231203 20:28:32.739" level="INFO">${display_style} = display: none;</msg>
+<status status="PASS" starttime="20231203 20:28:32.724" endtime="20231203 20:28:32.739"/>
 </kw>
-<kw name="Should Match" library="BuiltIn">
+<kw name="Should Be Equal" library="BuiltIn">
 <arg>display: none;</arg>
 <arg>${display_style}</arg>
-<doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
-<status status="PASS" starttime="20231203 18:13:34.239" endtime="20231203 18:13:34.239"/>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20231203 20:28:32.739" endtime="20231203 20:28:32.739"/>
 </kw>
+<while condition="'display: none;'=='//*[@id=&quot;modal&quot;]'">
+<iter>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="restart-ad"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 18:13:34.240" level="INFO">Clicking element '//*[@id="restart-ad"]'.</msg>
-<status status="PASS" starttime="20231203 18:13:34.239" endtime="20231203 18:13:34.434"/>
+<status status="NOT RUN" starttime="20231203 20:28:32.740" endtime="20231203 20:28:32.740"/>
 </kw>
-<kw name="Get Element Attribute" library="SeleniumLibrary">
-<var>${display_style}</var>
-<arg>//*[@id="modal"]</arg>
-<arg>style</arg>
-<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20231203 18:13:34.449" level="INFO">${display_style} = display: none;</msg>
-<status status="PASS" starttime="20231203 18:13:34.435" endtime="20231203 18:13:34.449"/>
-</kw>
-<kw name="Should Match" library="BuiltIn">
-<arg>display: none;</arg>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>display: block;</arg>
 <arg>${display_style}</arg>
-<doc>Fails if the given ``string`` does not match the given ``pattern``.</doc>
-<status status="PASS" starttime="20231203 18:13:34.450" endtime="20231203 18:13:34.450"/>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" starttime="20231203 20:28:32.740" endtime="20231203 20:28:32.740"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:13:34.451" endtime="20231203 18:13:36.521"/>
-</kw>
-<status status="PASS" starttime="20231203 18:13:21.136" endtime="20231203 18:13:36.521"/>
+<status status="NOT RUN" starttime="20231203 20:28:32.740" endtime="20231203 20:28:32.741"/>
+</iter>
+<status status="NOT RUN" starttime="20231203 20:28:32.740" endtime="20231203 20:28:32.741"/>
+</while>
+<status status="PASS" starttime="20231203 20:28:19.623" endtime="20231203 20:28:32.741"/>
 </test>
-<status status="PASS" starttime="20231203 18:13:05.962" endtime="20231203 18:13:36.522"/>
-</suite>
-<suite id="s1-s8" name="Form.login" source="c:\Users\neval\Haaga-Helia\Ohjelmistojen_teknologioita\Seminaarityö\robot_tests\Form.login.robot">
-<test id="s1-s8-t1" name="Login correct auth Test Case" line="17">
-<kw name="Open page">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:13:36.529" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
-<status status="PASS" starttime="20231203 18:13:36.528" endtime="20231203 18:13:39.481"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:13:44.482" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:13:39.482" endtime="20231203 18:13:44.482"/>
-</kw>
-<status status="PASS" starttime="20231203 18:13:36.528" endtime="20231203 18:13:44.482"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>//*[@id="username"]</arg>
-<arg>${User}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231203 18:13:44.483" level="INFO">Typing text 'tomsmith' into text field '//*[@id="username"]'.</msg>
-<status status="PASS" starttime="20231203 18:13:44.482" endtime="20231203 18:13:44.562"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>//*[@id="password"]</arg>
-<arg>${Pwd}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20231203 18:13:44.563" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
-<msg timestamp="20231203 18:13:44.590" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20231203 18:13:44.627" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20231203 18:13:44.563" endtime="20231203 18:13:44.628"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:13:49.628" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:13:44.628" endtime="20231203 18:13:49.628"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="login"]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 18:13:49.629" level="INFO">Clicking element '//*[@id="login"]/button'.</msg>
-<status status="PASS" starttime="20231203 18:13:49.628" endtime="20231203 18:13:49.974"/>
-</kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Welcome to the Secure Area. When you are done click logout below.</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231203 18:13:49.987" level="INFO">Current page contains text 'Welcome to the Secure Area. When you are done click logout below.'.</msg>
-<status status="PASS" starttime="20231203 18:13:49.974" endtime="20231203 18:13:49.987"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:13:49.987" endtime="20231203 18:13:52.058"/>
-</kw>
-<status status="PASS" starttime="20231203 18:13:36.527" endtime="20231203 18:13:52.058"/>
-</test>
-<test id="s1-s8-t2" name="Logout button function works correctly, goes login page Test Case" line="26">
-<kw name="Login correct auth Test Case">
-<kw name="Open page">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:13:52.061" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
-<status status="PASS" starttime="20231203 18:13:52.060" endtime="20231203 18:13:55.023"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:14:00.023" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:13:55.023" endtime="20231203 18:14:00.023"/>
-</kw>
-<status status="PASS" starttime="20231203 18:13:52.060" endtime="20231203 18:14:00.023"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>//*[@id="username"]</arg>
-<arg>${User}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231203 18:14:00.024" level="INFO">Typing text 'tomsmith' into text field '//*[@id="username"]'.</msg>
-<status status="PASS" starttime="20231203 18:14:00.023" endtime="20231203 18:14:00.095"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>//*[@id="password"]</arg>
-<arg>${Pwd}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20231203 18:14:00.096" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
-<msg timestamp="20231203 18:14:00.126" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20231203 18:14:00.173" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20231203 18:14:00.095" endtime="20231203 18:14:00.173"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:14:05.174" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:14:00.174" endtime="20231203 18:14:05.174"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="login"]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 18:14:05.175" level="INFO">Clicking element '//*[@id="login"]/button'.</msg>
-<status status="PASS" starttime="20231203 18:14:05.174" endtime="20231203 18:14:05.504"/>
-</kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Welcome to the Secure Area. When you are done click logout below.</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20231203 18:14:05.516" level="INFO">Current page contains text 'Welcome to the Secure Area. When you are done click logout below.'.</msg>
-<status status="PASS" starttime="20231203 18:14:05.504" endtime="20231203 18:14:05.517"/>
-</kw>
-<status status="PASS" starttime="20231203 18:13:52.060" endtime="20231203 18:14:05.517"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:14:10.518" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:14:05.518" endtime="20231203 18:14:10.518"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="content"]/div/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 18:14:10.519" level="INFO">Clicking element '//*[@id="content"]/div/a'.</msg>
-<status status="PASS" starttime="20231203 18:14:10.518" endtime="20231203 18:14:10.866"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>//*[@id="flash"]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20231203 18:14:10.885" level="INFO">Current page contains element '//*[@id="flash"]'.</msg>
-<status status="PASS" starttime="20231203 18:14:10.866" endtime="20231203 18:14:10.886"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:14:10.887" endtime="20231203 18:14:12.967"/>
-</kw>
-<status status="PASS" starttime="20231203 18:13:52.059" endtime="20231203 18:14:12.967"/>
-</test>
-<test id="s1-s8-t3" name="Login with incorrect username, should have &quot;Your username is invalid&quot; message Test Case" line="33">
-<kw name="Open page">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:14:12.970" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
-<status status="PASS" starttime="20231203 18:14:12.970" endtime="20231203 18:14:15.873"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:14:20.874" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:14:15.874" endtime="20231203 18:14:20.874"/>
-</kw>
-<status status="PASS" starttime="20231203 18:14:12.970" endtime="20231203 18:14:20.874"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>//*[@id="username"]</arg>
-<arg>FALSE</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231203 18:14:20.875" level="INFO">Typing text 'FALSE' into text field '//*[@id="username"]'.</msg>
-<status status="PASS" starttime="20231203 18:14:20.874" endtime="20231203 18:14:20.959"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>//*[@id="password"]</arg>
-<arg>${Pwd}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20231203 18:14:20.959" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
-<msg timestamp="20231203 18:14:20.985" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20231203 18:14:21.160" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20231203 18:14:20.959" endtime="20231203 18:14:21.161"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="login"]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 18:14:21.162" level="INFO">Clicking element '//*[@id="login"]/button'.</msg>
-<status status="PASS" starttime="20231203 18:14:21.161" endtime="20231203 18:14:21.495"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>//*[@id="flash"]</arg>
-<arg>Your username is invalid!</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20231203 18:14:21.537" level="INFO">Element '//*[@id="flash"]' contains text 'Your username is invalid!'.</msg>
-<status status="PASS" starttime="20231203 18:14:21.495" endtime="20231203 18:14:21.538"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:14:21.538" endtime="20231203 18:14:23.623"/>
-</kw>
-<status status="PASS" starttime="20231203 18:14:12.969" endtime="20231203 18:14:23.624"/>
-</test>
-<test id="s1-s8-t4" name="Login with incorrect password, should have &quot;Your password is invalid&quot; message Test Case" line="41">
-<kw name="Open page">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231203 18:14:23.626" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
-<status status="PASS" starttime="20231203 18:14:23.625" endtime="20231203 18:14:26.462"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>${Sleep}</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231203 18:14:31.463" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231203 18:14:26.462" endtime="20231203 18:14:31.463"/>
-</kw>
-<status status="PASS" starttime="20231203 18:14:23.625" endtime="20231203 18:14:31.464"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>//*[@id="username"]</arg>
-<arg>${User}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231203 18:14:31.464" level="INFO">Typing text 'tomsmith' into text field '//*[@id="username"]'.</msg>
-<status status="PASS" starttime="20231203 18:14:31.464" endtime="20231203 18:14:31.537"/>
-</kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>//*[@id="password"]</arg>
-<arg>False</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20231203 18:14:31.538" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
-<msg timestamp="20231203 18:14:31.566" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20231203 18:14:31.609" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20231203 18:14:31.537" endtime="20231203 18:14:31.609"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//*[@id="login"]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231203 18:14:31.610" level="INFO">Clicking element '//*[@id="login"]/button'.</msg>
-<status status="PASS" starttime="20231203 18:14:31.610" endtime="20231203 18:14:31.944"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>//*[@id="flash"]</arg>
-<arg>Your password is invalid!</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20231203 18:14:31.970" level="INFO">Element '//*[@id="flash"]' contains text 'Your password is invalid!'.</msg>
-<status status="PASS" starttime="20231203 18:14:31.945" endtime="20231203 18:14:31.970"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20231203 18:14:31.970" endtime="20231203 18:14:34.054"/>
-</kw>
-<status status="PASS" starttime="20231203 18:14:23.625" endtime="20231203 18:14:34.055"/>
-</test>
-<status status="PASS" starttime="20231203 18:13:36.524" endtime="20231203 18:14:34.056"/>
-</suite>
-<status status="PASS" starttime="20231203 18:11:07.877" endtime="20231203 18:14:34.058"/>
+<status status="PASS" starttime="20231203 20:28:19.426" endtime="20231203 20:28:32.742"/>
 </suite>
 <statistics>
 <total>
-<stat pass="16" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="16" fail="0" skip="0" id="s1" name="Robot Tests">Robot Tests</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1" name="Add remove elements">Robot Tests.Add remove elements</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s2" name="Basic auth">Robot Tests.Basic auth</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s3" name="Check boxes">Robot Tests.Check boxes</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s4" name="Context menu">Robot Tests.Context menu</stat>
-<stat pass="3" fail="0" skip="0" id="s1-s5" name="Drag Drop">Robot Tests.Drag Drop</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s6" name="Dropdown">Robot Tests.Dropdown</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s7" name="Entry Ad">Robot Tests.Entry Ad</stat>
-<stat pass="4" fail="0" skip="0" id="s1-s8" name="Form.login">Robot Tests.Form.login</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Entry Ad">Entry Ad</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20231203 18:11:38.814" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
-<msg timestamp="20231203 18:13:03.868" level="WARN">Keyword 'Get Element Attribute' found both from a custom library 'SeleniumLibrary' and a standard library 'XML'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'SeleniumLibrary.Get Element Attribute' or 'XML.Get Element Attribute'.</msg>
 </errors>
 </robot>
